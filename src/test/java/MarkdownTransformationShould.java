@@ -1,11 +1,10 @@
 /*
  * "" -> [] *
- * "a" -> []
+ * "a" -> [] *
  * "any text [a link](url)" -> ["[a link](url)"]
  * "any text [a link](url) more text [another link](url)" -> ["[a link](url)", "[another link](url)"]
  */
 
-import jdk.jshell.spi.ExecutionControl;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
