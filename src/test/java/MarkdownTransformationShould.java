@@ -27,8 +27,12 @@ public class MarkdownTransformationShould {
     }
 
     private static class LinkSearcher {
-        public static String[] find(String text) {
-            return new String[0];
+        public static List<String> find(String text) {
+            if (text.contains("[")) {
+                var link = text.substring(text.indexOf('['));
+                return List.of(link);
+            }
+            return List.of();
         }
     }
 }
